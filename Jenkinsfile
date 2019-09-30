@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building'
-                source '~/.bash_profile'
+                sh 'source ~/.bash_profile'
                 sh 'mvn clean install'
             }
         }
